@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Window</title>
+    <style>
+        body{
+            background: rgb(242, 196, 203) !important;
+            height: 200px;
+            
+        }
+    .box1{
+        width: 100%;
+        height: 47px;
+        background-color: darkgreen;
+        color: azure;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    .box2{
+        width:100%;
+        height:68px;
+        background-color: blueviolet;
+        color: rgb(252, 252, 253); 
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    .bigbox{
+       width:100%;
+       height: 600px;
+       display: flex;
+       flex-direction:row;
+       justify-content: space-between;
+    }
+    .smallbox{
+        width: 309px;
+        height: 564px;
+       margin-left: 43px;
+       background-color: aliceblue;
+       padding-left: 30px;
+       
+    } 
+
+    img{
+        margin-bottom: 25px;
+    }
+    .send{
+        width: 172px;
+        height: 50px;
+        background-color: rgb(149, 2, 2);
+        color: white;
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+    .close{
+        width: 172px;
+        height: 50px;
+        background-color: green;
+        color: white;
+
+    }
+    .box3{
+        width: 300px;
+        height: 50px;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+     @media only screen and (max-width:500px) { 
+        .bigbox{
+       width:100%;
+       height: 600px;
+       display: flex;
+       flex-direction:column;
+       justify-content: space-between;
+     }
+     .smallbox{
+        width: 309px;
+        height: auto;
+       margin-left: 0px !important; 
+       background-color: aliceblue;
+       padding-left: 30px;
+       
+    } 
+    .box3{
+        width: 300px;
+        height: auto;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .box2{
+        width:100%;
+        height:auto;
+        background-color: blueviolet;
+        color: rgb(252, 252, 253); 
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+     }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h3>AI Chat Window</h3>
+    </div>
+    <div class="box2">
+        <h2> Chat with the new AI Summit Chat Window! A new solution to your problems!<br>
+          Type anything and click the button,"Send", and the AI will respond.</h2> 
+    </div>
+    <div class="bigbox">
+        <img src="https://newsonair.com/wp-content/uploads/2022/09/FcZluO4XEAMRvBT-696x453.jpg" alt="">
+        <div class="smallbox">
+            <h1>Chat</h1>
+            <h4>Message</h4>
+            <textarea name="" placeholder="Type message" id="" cols="34" rows="13"></textarea>
+            <div class="box3">
+            <button class="send">
+                <h4>Send</h4>
+            </button>
+            <button class="close">
+                <h4>Close</h4>
+            </button>
+            </div>
+    </div>
+
+</body>
+</html>
